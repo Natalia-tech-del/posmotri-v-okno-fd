@@ -272,13 +272,14 @@ ol {
 }
 
 .search-form__pseudo-checkbox {
-  display: inline-block;
+  display: flex;
   width: 19px;
   height: 19px;
   margin-right: 1.5px;
   border: solid 1px #fff;
   padding: 1px;
-  vertical-align: middle;
+  justify-content: center;
+  align-items: center;
 }
 
 .search-form__pseudo-checkbox::after {
@@ -294,7 +295,7 @@ ol {
   opacity: 1;
 }
 
-.search-form__label:has(input[type="checkbox"]):hover {
+.search-form__label:has(input[type="checkbox"]):hover .search-form__label-text {
   text-decoration: underline;
   cursor: pointer;
 }
